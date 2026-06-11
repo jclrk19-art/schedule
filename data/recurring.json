@@ -1,0 +1,37 @@
+{
+  "rules": [
+    {
+      "id": "workout",
+      "title": "Workout",
+      "category": "workout",
+      "days": ["sun", "mon", "tue", "wed", "thu", "fri"],
+      "start": "17:00",
+      "end": "18:00",
+      "day_overrides": {
+        "sun": { "start": "16:30", "end": "18:00" }
+      },
+      "valid_from": "2026-06-11",
+      "skip_dates": []
+    },
+    {
+      "id": "cleanup",
+      "title": "Apartment cleanup / laundry",
+      "category": "chores",
+      "days": ["sun", "mon", "tue", "wed", "thu", "fri"],
+      "start": "18:00",
+      "end": "18:30",
+      "valid_from": "2026-06-11",
+      "skip_dates": []
+    },
+    {
+      "id": "lunch",
+      "title": "Lunch",
+      "category": "routine",
+      "days": ["sun", "mon", "tue", "wed", "thu", "fri"],
+      "start": "12:00",
+      "end": "12:45",
+      "valid_from": "2026-06-11",
+      "skip_dates": []
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "config": {
+    "title": "Personal Schedule",
+    "week_start": "sunday",
+    "day_window": { "start": "05:00", "end": "23:00" },
+    "off_days": ["sat"],
+    "categories": {
+      "internship": { "label": "Work — Judicial Internship", "color": "#2DE2E6" },
+      "ra":         { "label": "RA — Research & Reading", "color": "#FF4D9D" },
+      "career":     { "label": "Career", "color": "#B967FF" },
+      "workout":    { "label": "Workout", "color": "#FF9447" },
+      "chores":     { "label": "Chores", "color": "#8E7DB5" },
+      "routine":    { "label": "Routine", "color": "#6F8FD9" },
+      "open":       { "label": "Open / Flex", "color": "#5BE3A9" }
+    },
+    "goals": [
+      {
+        "id": "ra-prep-jun18",
+        "label": "RA prep — 12-hr target before Thu Jun 18 meeting",
+        "category": "ra",
+        "target_hours": 12,
+        "start": "2026-06-11",
+        "end": "2026-06-17"
+      },
+      {
+        "id": "career-week-jun11",
+        "label": "Career hours — 3-hr weekly target",
+        "category": "career",
+        "target_hours": 3,
+        "start": "2026-06-11",
+        "end": "2026-06-17"
+      }
+    ]
+  },
+  "milestones": [
+    {
+      "date": "2026-06-18",
+      "label": "RA Meeting 9:30pm",
+      "note": "Deadline — both articles read and meeting notes finalized before the 9:30–10:30 PM meeting."
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-06-12-internship",
+      "date": "2026-06-12",
+      "start": "09:00",
+      "end": "11:30",
+      "title": "Work — Judicial Internship",
+      "category": "internship",
+      "location": "in person",
+      "fixed": true
+    },
+    {
+      "id": "2026-06-15-internship",
+      "date": "2026-06-15",
+      "start": "08:30",
+      "end": "11:00",
+      "title": "Work — meet Judge Goudie",
+      "category": "internship",
+      "location": "in person",
+      "notes": "arrive by 8:30",
+      "fixed": true
+    },
+    {
+      "id": "2026-06-16-internship",
+      "date": "2026-06-16",
+      "start": "09:00",
+      "end": "11:30",
+      "title": "Work — Judicial Internship",
+      "category": "internship",
+      "location": "in person",
+      "notes": "3rd weekly in-person day — tentative, easy to move to Wed",
+      "fixed": true,
+      "tentative": true
+    },
+
+    {
+      "id": "2026-06-22-work",
+      "date": "2026-06-22",
+      "start": "09:00",
+      "end": "11:30",
+      "title": "Work — Judicial Internship",
+      "category": "internship",
+      "location": "in person",
+      "notes": "3-visit week (last week was 2) — day/length adjustable",
+      "tentative": true
+    },
+    {
+      "id": "2026-06-24-work",
+      "date": "2026-06-24",
+      "start": "09:00",
+      "end": "12:00",
+      "title": "Work — Judicial Internship",
+      "category": "internship",
+      "location": "in person",
+      "notes": "3-visit week — day/length adjustable",
+      "tentative": true
+    },
+    {
+      "id": "2026-06-26-work",
+      "date": "2026-06-26",
+      "start": "09:00",
+      "end": "11:30",
+      "title": "Work — Judicial Internship",
+      "category": "internship",
+      "location": "in person",
+      "notes": "3-visit week — day/length adjustable",
+      "tentative": true
+    },
+    {
+      "id": "2026-06-29-work",
+      "date": "2026-06-29",
+      "start": "09:00",
+      "end": "12:00",
+      "title": "Work — Judicial Internship",
+      "category": "internship",
+      "location": "in person",
+      "notes": "2-visit week (alternating cadence) — day/length adjustable",
+      "tentative": true
+    },
+    {
+      "id": "2026-07-01-work",
+      "date": "2026-07-01",
+      "start": "09:00",
+      "end": "12:00",
+      "title": "Work — Judicial Internship",
+      "category": "internship",
+      "location": "in person",
+      "notes": "2-visit week (alternating cadence) — day/length adjustable",
+      "tentative": true
+    },
+
+    {
+      "id": "2026-06-18-ra-meeting",
+      "date": "2026-06-18",
+      "start": "21:30",
+      "end": "22:30",
+      "title": "RA Meeting",
+      "category": "ra",
+      "fixed": true
+    },
+    {
+      "id": "2026-06-25-ra-meeting",
+      "date": "2026-06-25",
+      "start": "21:30",
+      "end": "22:30",
+      "title": "RA Meeting",
+      "category": "ra",
+      "fixed": true
+    },
+    {
+      "id": "2026-07-02-ra-meeting",
+      "date": "2026-07-02",
+      "start": "21:30",
+      "end": "22:30",
+      "title": "RA Meeting",
+      "category": "ra",
+      "fixed": true
+    },
+
+    {
+      "id": "2026-06-12-ra",
+      "date": "2026-06-12",
+      "start": "13:00",
+      "end": "14:30",
+      "title": "RA — Article 1: read + notes",
+      "category": "ra"
+    },
+    {
+      "id": "2026-06-14-ra",
+      "date": "2026-06-14",
+      "start": "09:00",
+      "end": "12:00",
+      "title": "RA — finish Article 1, start Article 2",
+      "category": "ra"
+    },
+    {
+      "id": "2026-06-15-ra",
+      "date": "2026-06-15",
+      "start": "13:00",
+      "end": "14:30",
+      "title": "RA — Article 2: read + notes",
+      "category": "ra"
+    },
+    {
+      "id": "2026-06-16-ra",
+      "date": "2026-06-16",
+      "start": "13:00",
+      "end": "16:00",
+      "title": "RA — finish Article 2 notes",
+      "category": "ra"
+    },
+    {
+      "id": "2026-06-17-ra",
+      "date": "2026-06-17",
+      "start": "09:00",
+      "end": "12:00",
+      "title": "RA — synthesize both articles + finalize meeting notes",
+      "category": "ra"
+    },
+
+    {
+      "id": "2026-06-11-career",
+      "date": "2026-06-11",
+      "start": "13:00",
+      "end": "14:30",
+      "title": "Career — resume & LinkedIn",
+      "category": "career"
+    },
+    {
+      "id": "2026-06-14-career",
+      "date": "2026-06-14",
+      "start": "14:30",
+      "end": "16:00",
+      "title": "Career — job applications",
+      "category": "career"
+    }
+  ]
+}
