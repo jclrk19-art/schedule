@@ -437,6 +437,10 @@ def render(sched, all_events):
     .panel {{ grid-template-columns:1fr; }}
     body {{ padding:16px 8px 40px; }}
     .ev-meta {{ display:none; }}
+    .grid {{ overflow-x:auto; -webkit-overflow-scrolling:touch; }}
+    .head-row, .body-row {{ grid-template-columns:44px repeat(7, minmax(110px, 1fr)); width:max-content; min-width:100%; }}
+    .gutter-head, .gutter {{ position:sticky; left:0; z-index:5; background:var(--bg2); }}
+    .hour {{ right:6px; font-size:10px; }}
   }}
   @media print {{
     body {{ padding:0; background:white; color:#1a1a1a; }}
@@ -493,6 +497,12 @@ def render(sched, all_events):
     label.textContent = weeks[cur].dataset.label;
     prev.disabled = cur === 0;
     next.disabled = cur === weeks.length - 1;
+    // on small screens the grid scrolls horizontally — bring today into view
+    var grid = weeks[cur].querySelector('.grid');
+    var col = weeks[cur].querySelector('.day-col[data-date="' + t + '"]');
+    if (grid && col && grid.scrollWidth > grid.clientWidth + 1) {{
+      grid.scrollLeft += col.getBoundingClientRect().left - grid.getBoundingClientRect().left - 44;
+    }}
   }}
   prev.onclick = function () {{ show(cur - 1); }};
   next.onclick = function () {{ show(cur + 1); }};
